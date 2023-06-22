@@ -1,0 +1,42 @@
+{
+  "root": true,
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "parser": "babel-eslint",
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "plugin:vue/essential"
+  ],
+  "globals": {
+    "ApexCharts": true
+  },
+  "rules": {
+    "indent": [
+      "error",
+      4
+    ],
+    "vue/html-indent": "off",
+    "vue/html-closing-bracket-spacing": "off",
+    "vue/no-deprecated-v-bind-sync": "off",
+    "vue/max-attributes-per-line": [
+      "error",
+      {
+        "singleline": {
+          "max": 4
+        },
+        "multiline": {
+          "max": 1
+        }
+      }
+    ],
+    // Remove this when prettier 2.0 is out
+    "space-before-function-paren": 0
+    // Do not clash with Prettier
+  }
+}
